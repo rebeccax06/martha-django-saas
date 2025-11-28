@@ -175,10 +175,4 @@ else:
     MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 
-# M-PESA PAYMENT CONFIGURATIONS
-if not DEBUG:
-    PUBLIC_KEY = config("PUBLIC_KEY")
-    API_KEY = config("API_KEY")
-else:
-    PUBLIC_KEY = config("PUBLIC_KEY")
-    API_KEY = config("API_KEY")
+# TODO: Billing provider integration pending (Stripe, Paddle, etc.)

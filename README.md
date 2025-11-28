@@ -11,14 +11,14 @@ django-saas is a generic subscription billing system built for django projects. 
 ## Installation
 - Clone the repo
 
-   ```git clone git@github.com:devmedtz/django_saas.git```
+   ```git clone https://github.com/rebeccax06/martha-django-saas.git```
 
 - Create virtual environment and activate it.
 
    ```
-   virtualenv env
+   python -m venv .venv
 
-   env/scripts/activate
+   source .venv/bin/activate
    ```
 
 - Install the required packages
@@ -41,6 +41,9 @@ django-saas is a generic subscription billing system built for django projects. 
 
    ```python manage.py runserver```
 
+# Login
+- email: test@example.com
+- password: testpass123
 
 ### Contributions are warmly welcomed.
 
