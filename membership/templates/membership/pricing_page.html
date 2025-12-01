@@ -20,8 +20,8 @@
           <li>{{plan.duration_days}} days duration</li>
           <li>Free support</li>
         </ul>
-        {% if request.user.is_authenticated %} {% if plan.name == 'Free' %} {%
-        if plan.name != current_plan %}
+        {% if request.user.is_authenticated %} {% if plan.name == 'Free' %} 
+        {% if plan.name != current_plan %}
         <small class="text-warning">You can not subscribe to free plan</small>
         {% else %}
         <small class="text-success">This is your current plan</small>

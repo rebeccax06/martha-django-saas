@@ -4,9 +4,9 @@ django-saas is a generic subscription billing system built for django projects. 
 ## Features
 1. User able to free signup for 14 days demo to access features
 2. User able to comfirm registration by email or OTP
-3. User able to select the plan on signup and he/she may buy or access    demo for 14 days
+3. User able to select the plan on signup and he/she may buy or access demo for 14 days
 4. After 14 days ends, user may pay for next 1/6/12 month subscription for the plan selected, or upgrade or downgrade the plan
-5. Payment gateway should be MPESA, by mpesa open api
+5. Payment gateway snot integrated right now
 
 ## Installation
 - Clone the repo
@@ -44,6 +44,10 @@ django-saas is a generic subscription billing system built for django projects. 
 # Login
 - email: test@example.com
 - password: testpass123
+
+# To create a user
+- Sign Up via the localhost:8000
+- Go to sent_mails and click the link to confirm registration
 
 ### Contributions are warmly welcomed.
 

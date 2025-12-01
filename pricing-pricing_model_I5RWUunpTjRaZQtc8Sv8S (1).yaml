@@ -1,0 +1,78 @@
+isDefault: true
+name: "Unlimited Usage Subscription"
+features:
+  - type: "usage_credit_grant"
+    slug: "staff_included"
+    name: "3 staff included"
+    description: "how many staff you get"
+    amount: 3
+    renewalFrequency: "every_billing_period"
+    active: true
+    usageMeterSlug: "staff"
+  - type: "usage_credit_grant"
+    slug: "3_branch_included"
+    name: "3 Branch Included per month"
+    description: "number of branches included per store"
+    amount: 3
+    renewalFrequency: "every_billing_period"
+    active: true
+    usageMeterSlug: "branches"
+  - type: "usage_credit_grant"
+    slug: "5_staff_included"
+    name: "5 staff included"
+    description: "Staff included for basic plan"
+    amount: 5
+    renewalFrequency: "every_billing_period"
+    active: true
+    usageMeterSlug: "staff"
+  - type: "usage_credit_grant"
+    slug: "5_branch_included"
+    name: "5 Branch included per month"
+    description: "5 branch/store basic plan"
+    amount: 5
+    renewalFrequency: "every_billing_period"
+    active: true
+    usageMeterSlug: "branches"
+products:
+  - product:
+      name: "basic"
+      description: "$5/mo with 5 staff included, 5 branch/store, 30 days duration, free support"
+      active: true
+      default: false
+      slug: "basic"
+    prices:
+      - intervalUnit: "month"
+        name: "Plus Plan (Monthly)"
+        intervalCount: 1
+        type: "subscription"
+        isDefault: true
+        unitPrice: 500
+        usageEventsPerUnit: null
+        active: true
+        slug: "plus_monthly"
+        usageMeterId: null
+    features:
+      - "5_staff_included"
+      - "5_branch_included"
+  - product:
+      name: "Free"
+      description: "Free plan"
+      active: true
+      default: true
+      slug: "free_tier"
+    prices:
+      - intervalUnit: "month"
+        name: "Free Plan"
+        intervalCount: 1
+        type: "subscription"
+        isDefault: true
+        unitPrice: 0
+        usageEventsPerUnit: null
+        active: true
+        slug: "free_monthly"
+        usageMeterId: null
+    features:
+      - "staff_included"
+      - "3_branch_included"
+ 
+ 
